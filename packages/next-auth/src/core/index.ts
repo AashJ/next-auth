@@ -51,7 +51,7 @@ async function getBody(req: Request): Promise<Record<string, any> | undefined> {
 }
 
 // TODO:
-async function toInternalRequest(
+export async function toInternalRequest(
   req: RequestInternal | Request
 ): Promise<RequestInternal> {
   if (req instanceof Request) {
